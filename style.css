@@ -23,6 +23,29 @@ nav, button {
 	font-weight: bold;
 }
 
+.about1 {
+	display: flex;
+	background-color: #c0c2ce;
+	text-align: center;
+	padding: 3em;
+	flex-wrap: wrap;
+
+}
+
+.about {
+	text-align: center;
+	text-decoration: underline;
+	width: 100%;
+}
+
+.aboutimage {
+	width: 200px;
+	height:	250px;
+}
+
+footer {
+	background-color: #c0c2ce;
+}
 
 
 
