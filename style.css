@@ -1,0 +1,29 @@
+/*base styles*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	line-height: 1.618em;
+	font-family: 'Acme', sans-serif;
+}
+
+p {
+	width: 40em;
+}
+
+img {
+	max-width: 100%;
+}
+
+nav, button {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+
+
+
