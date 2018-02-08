@@ -164,11 +164,17 @@ button:hover {
 
 /*projects*/
 
+h2 {
+	margin-top: 2em;
+}
+
 .project {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	margin-top:2em; 
+	margin-bottom:2em;
 }
 
 .columns {
@@ -178,9 +184,18 @@ button:hover {
 }
 
 .columns img {
-	width: 20em;
-	height: 20em;
+	width: 17em;
+	height: 17em;
+	display: flex;
+	justify-content: space-around;
+	margin: 2em 1em;
 }
+
+/*#git_buttons {
+	width: 100%;
+}*/
+
+
 
 /*testimonials*/
 
@@ -191,9 +206,10 @@ h2 {
 blockquote {
 	text-align: center;
 	padding: 0em 11em;
-	margin-left: 0;
-  	margin-right: 0;
+	/*margin-left: 0;
+  	margin-right: 0;*/
   	display: none;
+  	margin: 3em 0;
 }
 
 blockquote:first-of-type {

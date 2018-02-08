@@ -70,6 +70,12 @@
 
   }, 7000);
   
+// function myFunction() {
+//     var x = document.getElementById("#git_buttons").style.text-align;
+//     // document.getElementById("").innerHTML = x;
+// }
+
+// $('document').getElementById('git_buttons').style.text-align = center;
 
 
 
