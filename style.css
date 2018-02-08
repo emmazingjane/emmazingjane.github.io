@@ -86,12 +86,6 @@ nav, button {
 	justify-content: center;
 }
 
-.heading {
-	/*display: flex;
-	justify-content: center;
-	flex-flow: row nowrap;*/
-}
-
 
 h1 {
     font-size: 5em;
@@ -143,6 +137,7 @@ nav {
 	/*z-index: 100;*/
 	text-align: center;
 	height: 2em;
+	margin: auto;
 }
 
 nav a {
@@ -196,12 +191,25 @@ h2 {
 blockquote {
 	text-align: center;
 	padding: 0em 11em;
+	margin-left: 0;
+  	margin-right: 0;
+  	display: none;
+}
+
+blockquote:first-of-type {
+  display: block;
+}
+
+.border_test {
+	border-bottom: 1px solid #afafaf;
+	border-top: 1px solid #afafaf;
 }
 
 /*Form*/
 
 h3 {
 	text-align: center;
+	margin-top: 2em;
 
 }
 

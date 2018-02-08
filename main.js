@@ -51,6 +51,9 @@
     $('.carousel-indicators li').removeClass('active');
     $('.carousel-indicators li[data-slide-number="' + currentSlideIndex + '"]').addClass('active');
   };
+
+
+
 // testimonials
   var quoteCounter = 0;
   var quoteLength = $('blockquote').length;
@@ -61,6 +64,13 @@
         quoteCounter = 0;
       } else {
         quoteCounter += 1;
-      }
+      };
       $('blockquote').eq(quoteCounter).fadeIn();
     });
+
+  }, 7000);
+  
+
+
+
+
