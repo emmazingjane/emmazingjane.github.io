@@ -1,20 +1,17 @@
 /*base styles*/
 
-* {
-	/*box-sizing: border-box;*/
-}
-
 body {
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 1.618em;
 	font-family: 'Acme', sans-serif;
 	word-spacing: 1px;
 	letter-spacing: 0.5px;
+	background-color: #f8f8fa;
 }
 
-p {
-	width: 50em;
-}
+/*p {
+	width: 30em;
+}*/
 
 img {
 	max-width: 100%;
@@ -23,13 +20,37 @@ img {
 nav, button {
 	text-transform: uppercase;
 	font-weight: bold;
+	height: 3em;
+	margin: 1em;
 }
 
 .content-wrapper {
-	max-width: 950px;
+	/*max-width: 950px;*/
 	margin-top: 0 auto;
 	padding: 0 1em;
 }
+
+.hamburger {
+	display: none;
+}
+
+/* carousel*/
+
+/*.carousel {
+	overflow: hidden;
+
+}
+
+.image-wrapper {
+  display: flex;
+  transition: all .3s ease-in-out;
+}
+
+.image-wrapper img {
+  align-self: center;
+}
+*/
+/* about me section*/
 
 .about1 {
 	display: flex;
@@ -37,6 +58,10 @@ nav, button {
 	padding: 3em;
 	flex-wrap: wrap;
 
+}
+
+.about1 p {
+	width: 30em;
 }
 
 .about {
@@ -49,13 +74,12 @@ nav, button {
 	width: 200px;
 	height:	250px;
 	padding: 1em;
+	margin: 1em;
 }
 
-footer {
-	background-color: #c0c2ce;
-	width: 100%;
-	height: 100px;
-}
+
+
+/*navigation*/
 
 nav {
 	/*position: fixed;*/
@@ -91,9 +115,72 @@ button:hover {
 	background-color: #c0c2ce;
 }
 
-.hamburger {
-	display: none;
+/*projects*/
+
+.project {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
+
+.columns {
+	display: flex;
+	flex-direction: column;
+	width: 31%;
+}
+
+.columns img {
+	width: 20em;
+	height: 20em;
+}
+
+/*testimonials*/
+
+h2 {
+	text-align: center;
+}
+
+blockquote {
+	text-align: center;
+	padding: 0em 11em;
+}
+
+/*Form*/
+
+h3 {
+	text-align: center;
+
+}
+
+form {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	/*flex-grow: 1;*/
+	background-color: #f8f8fa;
+}
+
+form button {
+	width: 100%;
+	height: 50px;
+	background-color: #e5e6eb;
+}
+
+input {
+	border: 2px solid #afafaf;
+/*	margin-bottom: 12px;*/
+	margin-bottom: .8rem;
+	padding: 10px 10px;
+	outline: 0;
+	width: 31.2%;
+	display: flex;
+	align-content: space-around;
+}
+
+
+/*Footer / bottom of page*/
 
 .social-links {
 	display: flex;
@@ -115,6 +202,12 @@ button:hover {
 	/*display: flex;
 	flex-direction: row;
 	align-content: space-around;*/
+}
+
+footer {
+	background-color: #c0c2ce;
+	width: 100%;
+	height: 100px;
 }
 
 
