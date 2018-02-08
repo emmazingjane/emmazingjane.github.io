@@ -3,7 +3,7 @@
 body {
 	font-size: 20px;
 	line-height: 1.618em;
-	font-family: 'Acme', sans-serif;
+	font-family: font-family: 'Ubuntu', sans-serif;
 	word-spacing: 1px;
 	letter-spacing: 0.5px;
 	background-color: #f8f8fa;
@@ -26,8 +26,9 @@ nav, button {
 
 .content-wrapper {
 	/*max-width: 950px;*/
-	margin-top: 0 auto;
+/*	margin-top: 0 auto;
 	padding: 0 1em;
+	max-width: 100%;*/
 }
 
 .hamburger {
@@ -38,15 +39,20 @@ nav, button {
 
 .carousel {
   overflow: hidden;
+  filter: opacity(50%);
+
 }
 
 .image-wrapper {
   display: flex;
   transition: all .3s ease-in-out;
+  height: 400px;
+
 }
 
 .image-wrapper img {
   align-self: center;
+
 }
 
 .carousel-indicators {
@@ -70,6 +76,30 @@ nav, button {
   border: 2px solid #2C3E50;
 }
 
+.heading_container {
+	width: 100%;
+	margin-top: 3em;
+	position: absolute;
+	z-index: 3;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+
+.heading {
+	/*display: flex;
+	justify-content: center;
+	flex-flow: row nowrap;*/
+}
+
+
+h1 {
+    font-size: 5em;
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: bold;
+}
+
+
 
 /* about me section*/
 
@@ -82,7 +112,8 @@ nav, button {
 }
 
 .about1 p {
-	width: 30em;
+	width: 40em;
+	font-weight: bold;
 }
 
 .about {
@@ -92,10 +123,10 @@ nav, button {
 }
 
 .aboutimage {
-	width: 200px;
-	height:	250px;
+	width: 300px;
+	height:	300px;
 	padding: 1em;
-	margin: 1em;
+	/*margin: 1em;*/
 }
 
 

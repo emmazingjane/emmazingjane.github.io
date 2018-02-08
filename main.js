@@ -51,3 +51,16 @@
     $('.carousel-indicators li').removeClass('active');
     $('.carousel-indicators li[data-slide-number="' + currentSlideIndex + '"]').addClass('active');
   };
+// testimonials
+  var quoteCounter = 0;
+  var quoteLength = $('blockquote').length;
+
+  setInterval(function () {
+    $('blockquote').eq(quoteCounter).fadeOut(800, function () {
+      if (quoteCounter === quoteLength - 1) {
+        quoteCounter = 0;
+      } else {
+        quoteCounter += 1;
+      }
+      $('blockquote').eq(quoteCounter).fadeIn();
+    });
