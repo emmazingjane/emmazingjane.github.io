@@ -7,6 +7,7 @@ body {
 	word-spacing: 1px;
 	letter-spacing: 0.5px;
 	background-color: #f8f8fa;
+	margin: 0;
 }
 
 /*p {
@@ -102,6 +103,7 @@ h1 {
 	background-color: #c0c2ce;
 	padding: 3em;
 	flex-wrap: wrap;
+	margin: 1em 0;
 
 }
 
@@ -112,7 +114,6 @@ h1 {
 
 .about {
 	text-align: center;
-	text-decoration: underline;
 	width: 100%;
 }
 
@@ -120,7 +121,97 @@ h1 {
 	width: 300px;
 	height:	300px;
 	padding: 1em;
+	border-radius: 50%;
 	/*margin: 1em;*/
+}
+
+.mequote {
+	font-size: 1em;
+	/*text-align: center;*/
+	margin: auto 4em;
+}
+
+/*about me*/
+
+/*https://davidwalsh.name/css-flip*/
+/* entire container, keeps perspective */
+.flexflip {
+	display: flex;
+	flex-direction: row;
+}
+
+.flexflip p {
+	text-align: center;
+	font-size: 1em;
+	margin-top: 5em;
+}
+
+.flip-container {
+	perspective: 1000px;
+	
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+}
+
+.flip-container, .front1, .back1, .front2, .back2, .front3, .back3, .front4, .back4, .front5, .back5 {
+	width: 290px;
+	height: 300px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front1, .back1, .front2, .back2, .front3, .back3, .front4, .back4, .front5, .back5 {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front1, .front2, .front3, .front4, .front5 {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back1, .back2, .back3, .back4, .back5 {
+	transform: rotateY(180deg);
+	background-color: #997a8d;
+}
+
+.front1 {
+	background-image: url("img/bella.png");
+	background-size: cover;
+}
+.front2 {
+	background-image: url("img/cooking3.png");
+	background-size: cover;
+}
+
+.front3 {
+	background-image: url("img/dakota.png");
+	background-size: cover;
+}
+
+.front4 {
+	background-image: url("img/hiking.png");
+	background-size: cover;
+}
+
+.front5 {
+	background-image: url("img/painting.png");
+	background-size: cover;
 }
 
 
@@ -184,17 +275,12 @@ h2 {
 }
 
 .columns img {
-	width: 17em;
+	width: 20em;
 	height: 17em;
 	display: flex;
 	justify-content: space-around;
 	margin: 2em 1em;
 }
-
-/*#git_buttons {
-	width: 100%;
-}*/
-
 
 
 /*testimonials*/
@@ -230,15 +316,22 @@ h3 {
 }
 
 form {
-	display: flex;
+	/*display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	flex-wrap: wrap;*/
 	/*flex-grow: 1;*/
 	background-color: #f8f8fa;
 }
 
-form button {
+.contact1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.contact button {
 	width: 100%;
 	height: 50px;
 	background-color: #e5e6eb;
@@ -250,9 +343,27 @@ input {
 	margin-bottom: .8rem;
 	padding: 10px 10px;
 	outline: 0;
-	width: 31.2%;
-	display: flex;
-	align-content: space-around;
+	width: 100%;
+	/*width: 31.2%;*/
+	/*display: flex;*/
+	/*align-content: space-around;*/
+
+}
+
+.col{
+	flex:1 1 auto;
+}
+
+.error {
+	border: 2px solid #ED5254;
+	flex-wrap: wrap;
+}
+
+.error-message {
+	color: #D48581;
+	text-align: left;
+	padding: 1em;
+	display: none;
 }
 
 
@@ -284,6 +395,14 @@ footer {
 	background-color: #c0c2ce;
 	width: 100%;
 	height: 100px;
+	margin-top: 2em;
+}
+
+
+@media screen and (max-width: 764px){
+	.contact1{
+		flex-direction: column;
+	}
 }
 
 

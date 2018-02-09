@@ -31,7 +31,7 @@
 			
 
 
-			
+
 		
 	<header> 
 
@@ -47,11 +47,11 @@
 				
 
 				<div class="image-wrapper">
-					<img src="img/carousel_1.jpg" alt"">
-					<img src="img/carousel_2.jpg" alt"">
-					<img src="img/carousel_3.jpg" alt"">
-					<img src="img/carousel_4.jpg" alt"">
-					<img src="img/carousel_5.jpg" alt"">
+					<img src="img/carousel_1.png" alt"">
+					<img src="img/carousel_2.png" alt"">
+					<img src="img/carousel_3.png" alt"">
+					<img src="img/carousel_4.png" alt"">
+					<img src="img/carousel_5.png" alt"">
 				</div>
 			<!-- </div> -->
 	</header>
@@ -64,10 +64,75 @@
 			<div class="content-wrapper"></div>
 			
 				<h2 class="about">About Me</h2>
-				<img src="file:///Users/emmabennett/wdi/portfolio_1/img/about_me2.JPG" class="aboutimage">
-				<p>I am a General Assemby student learning full stack web development in the Bay Area and am seeking opportunities to build beautiful products and grow professionally.  I have a proven track record as an excellent communicator. I feel this is vital for helping clients visualize what I am building into their products. Since I enjoy painting, drawing, and decorating I will be able to use my creativity to make the programs I develop aesthetically pleasing as well as easy to use. I love a challenge; being motivated to accomplish my goals and move forward is my best asset as a programmer.</p>
+				<img src="img/about_me2.png" class="aboutimage">
+				<p>Student at General Assembly SF learning full stack web development. An experienced communicator who loves to collaborate and build relations with clients as well as peers. Skills are critical thinking, determination, and artistic ability with an eye for design to generate ideas to reality.
+					<br>
+					<br>
+					Skills: HTML, CSS, JavaScript, jQuery, Ajax
+					<br>
+					Tools : Sublime, Atom, Bootstrap, GitHub
+					<br>
+					<br>
+					- Emma Bennett -
+				
+			
 				</div>
 		
+	</section>
+
+	<section class="flexflip">
+		
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front1">
+					
+				</div>
+				<div class="back1">
+					<p>My dwarf cat thats been by my side for 5 years.</p>
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front2">
+					
+
+				</div>
+				<div class="back2">
+					<p>I love to cook, nutritious food is my specialty!</p>
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front3">
+					
+				</div>
+				<div class="back3">
+					<p>I resuced Dakota when he was a puppy, now he's my forever friend</p>
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front4">
+					
+				</div>
+				<div class="back4">
+					<p>I love to hike and go on adventures in nature.</p>				
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front5">
+					
+				</div>
+				<div class="back5">
+					<p>In my spare time I paint</p>
+				</div>
+			</div>
+		</div>
 	</section>
 
 
@@ -82,7 +147,7 @@
 
 				<div class="columns">
 
-					<img src="img/filler_1.jpeg" alt="html,css">
+					<img src="img/filler_1.png" alt="html,css">
 						
 					<button><a href="https://github.com/emmazingjane/Monument">HTML and CSS</a></button>
 
@@ -91,7 +156,7 @@
 
 				<div class="columns">
 
-					<img src="img/filler_2.jpg" alt="javascript">
+					<img src="img/filler_2.png" alt="javascript">
 						
 					<button><a href="https://github.com/emmazingjane/racer_game">JavaScript and jQuery</a></button>
 
@@ -99,7 +164,7 @@
 
 				<div class="columns">
 
-					<img src="img/filler_3.jpg" alt="ajax">
+					<img src="img/filler_3.png" alt="ajax">
 					<button> <a href="https://github.com/emmazingjane/GeoQuakes">Ajax</a></button>
 						
 					<!-- <input type="button" id="git_buttons" onclick="location.href='https://github.com/emmazingjane/GeoQuakes';" value="Ajax" /> -->
@@ -136,24 +201,46 @@
 	</section>
 
 		<h3 id="contact"> Let's Connect </h3> 
+		<div class="contact">
 				
-			<form>
+			<form class="contact1" novalidate>
 
-				<input type="text" placeholder="Full Name" class="col">
-				<input type="text" placeholder="Emal" class="col">
-				<input type="text" placeholder="Subject" class="col">
-				<button type="submit">Submit</button>
+				<div class="col">
+						<input type="text" placeholder="Full Name">
+						<p class="error-message">
+
+						Please enter your full name.</p>
+				</div>
+
+				<div class="col">
+
+						<input type="text" placeholder="Email">
+						<p class="error-message">Please enter your email</p>
+				</div>
+
+				<div class="col">
+
+						<input type="text" placeholder="Subject">
+						<p class="error-message">Please Enter a subject</p>
+				</div>
 				
+
+				
+			
+				<button type="submit">Submit</button>
+
+			</div>
+
 			</form>	
 
 
 
 	<footer>
 			<div class="social-links">
-				<a href=""><i class="fa fa-linkedin"></i></a>
-				<a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-				<a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-				<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a href="https://www.linkedin.com/in/emmajbennett/"><i class="fa fa-linkedin"></i></a>
+				<a href="https://www.facebook.com/emmaj15"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/emmazingdesigns"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+				<a href="https://www.instagram.com/emmazing_jane"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 
 			</div>
 
