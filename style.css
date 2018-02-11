@@ -10,26 +10,11 @@ body {
 	margin: 0;
 }
 
-/*p {
-	width: 30em;
-}*/
-
-/*img {
-	max-width: 100%;
-}*/
-
 .nav1, button {
 	text-transform: uppercase;
 	font-weight: bold;
 	height: 3em;
 	margin: 1em;
-}
-
-.content-wrapper {
-	/*max-width: 950px;*/
-/*	margin-top: 0 auto;
-	padding: 0 1em;
-	max-width: 100%;*/
 }
 
 .hamburger {
@@ -123,13 +108,10 @@ h1 {
 	height:	300px;
 	padding: 1em;
 	border-radius: 50%;
-
-	/*margin: 1em;*/
 }
 
 .mequote {
 	font-size: 1em;
-	/*text-align: center;*/
 	margin: auto 4em;
 }
 
@@ -221,13 +203,10 @@ h1 {
 /*navigation*/
 
 nav {
-	/*position: fixed;*/
 	top: 0;
 	left: 0;
 	right: 0;
 	background-color: #e5e6eb;
-	/*color: #000;*/
-	/*z-index: 100;*/
 	text-align: center;
 	height: 2em;
 	margin: auto;
@@ -294,8 +273,6 @@ h2 {
 blockquote {
 	text-align: center;
 	padding: 0em 11em;
-	/*margin-left: 0;
-  	margin-right: 0;*/
   	display: none;
   	margin: 3em 0;
 }
@@ -318,11 +295,6 @@ h3 {
 }
 
 form {
-	/*display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	flex-wrap: wrap;*/
-	/*flex-grow: 1;*/
 	background-color: #f8f8fa;
 }
 
@@ -341,15 +313,10 @@ form {
 
 input {
 	border: 2px solid #afafaf;
-/*	margin-bottom: 12px;*/
 	margin-bottom: .8rem;
 	padding: 10px 10px;
 	outline: 0;
 	width: 100%;
-	/*width: 31.2%;*/
-	/*display: flex;*/
-	/*align-content: space-around;*/
-
 }
 
 .col{
@@ -380,17 +347,10 @@ input {
 }
 
 .social-links a {
-	/*font-size: 30px;*/
 	font-size: 2rem;
-	/*padding: 15px;
-	padding: 1rem;*/
 	margin-bottom: 30px;
 	margin-bottom: 2rem;
-	/*display: inline-block;*/
 	color: #44545E;
-	/*display: flex;
-	flex-direction: row;
-	align-content: space-around;*/
 }
 
 footer {
