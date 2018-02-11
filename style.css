@@ -14,11 +14,11 @@ body {
 	width: 30em;
 }*/
 
-img {
+/*img {
 	max-width: 100%;
-}
+}*/
 
-nav, button {
+.nav1, button {
 	text-transform: uppercase;
 	font-weight: bold;
 	height: 3em;
@@ -404,6 +404,36 @@ footer {
 @media screen and (max-width: 764px){
 	.contact1{
 		flex-direction: column;
+	}
+
+	.flexflip {
+		display: none;
+	}
+
+	.project {
+		flex-direction: column;
+		max-width: none;
+
+	}
+
+	.hamburger {
+		display: block;
+	}
+
+	.nav1 {
+		display: none;
+	}
+
+	h1 {
+		font-size: 2em;
+	}
+
+	p, h2, h3 {
+		font-size: 16px;
+	}
+
+	.testimonials p {
+		margin: 0 auto;
 	}
 }
 
