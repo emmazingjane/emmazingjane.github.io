@@ -9,6 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="./style.css">
 	<!-- <script src="main.js"></script> -->
 
+
+
+
 	<meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
@@ -22,7 +25,17 @@
 <body>
 
 	<nav> 
-		<a class="hamburger" href=""><i class="fa fa-bars"></i></a>
+		<!-- <a class="hamburger" href=""><i class="fa fa-bars"></i></a> -->
+
+		<div class="dropdown">
+		  <button onclick="myFunction()" class="dropbtn"><a class="hamburger" href=""><i class="fa fa-bars"></i></a></button>
+		  <div id="myDropdown" class="dropdown-content">
+		   	<a href="#about">about</a>
+			<a href="#projects">projects</a>
+			<a href="#testimonials">quotes</a>
+			<a href="#contact">contact</a>
+		  </div>
+	</div>
 		
 		<div class="nav1">
 			<a href="#about">about</a>
@@ -206,10 +219,10 @@
 		<h3 id="contact"> Let's Connect </h3> 
 		<div class="contact">
 				
-			<form class="contact1" novalidate>
+			<form class="contact1" action="https://formspree.io/emma.j.bennett15@gmail.com" novalidate>
 
 				<div class="col">
-						<input type="text" placeholder="Full Name">
+						<input type="text" placeholder="Full Name" name="name">
 						<p class="error-message">
 
 						Please enter your full name.</p>
@@ -217,13 +230,13 @@
 
 				<div class="col">
 
-						<input type="text" placeholder="Email">
+						<input type="text" placeholder="Email" name="email">
 						<p class="error-message">Please enter your email</p>
 				</div>
 
 				<div class="col">
 
-						<input type="text" placeholder="Subject">
+						<input type="text" placeholder="Subject" name="message">
 						<p class="error-message">Please Enter a subject</p>
 				</div>
 				
