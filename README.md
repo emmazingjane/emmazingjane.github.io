@@ -142,4 +142,12 @@ The flipper was a fun challenege
 }
 
 
+1. stack form fields
+2. center images
+3. reduce padding on testimonials at smaller media query
+4. fix positioning and z-index of dropdown menu
+5. Adjust positioning of images at smaller media query
+
+end of week
+
 
